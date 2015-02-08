@@ -6,9 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "express": "~4.9.x"
-  },
   "engines": {
     "node": "0.10.x"
   },
@@ -21,5 +18,8 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.11.2"
+  }
 }
