@@ -16,9 +16,9 @@ app.get('/db', function(req, res) {
     client.query('select * from test_table', function(err, result) {
       done();
       if(err) {
-        console.error(err); response.send("Error" + err);
+        console.error(err); res.send("Error" + err);
       } else {
-        response.send(result.rows);
+        res.send(result.rows);
       }
     });
   });
