@@ -5,8 +5,11 @@ jQuery(function($) {'use strict';
 		var data = $.get('data.php', function(data){
 			
 			var data = JSON.parse(data),
-				products = data.products;
+				products = data.products,
+				transaction = data.transaction;
 			
+			transaction.currency = 'PLN';
+
 			ga('ecommerce:addTransaction', data.transaction);
 
 			for(var i=0, len = products.length; i<len; i++) {
