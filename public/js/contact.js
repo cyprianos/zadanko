@@ -1,6 +1,8 @@
 jQuery(function($) {'use strict';
 	 
-	var form = $('.contact-form');
+	var form = $('.contact-form'),
+		email = form.find('[type=email]');
+
 	form.submit(function () {'use strict',
 		$this = $(this);
 		$.post("sendemail.php", $(".contact-form").serialize(),function(result){
@@ -9,6 +11,10 @@ jQuery(function($) {'use strict';
 			}
 		});
 		return false;
+	});
+	
+	email.click(function() {
+		ga('send', 'pageview', '/klik-w-mail');
 	});
 
 });
