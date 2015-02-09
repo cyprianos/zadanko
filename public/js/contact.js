@@ -3,10 +3,11 @@ jQuery(function($) {'use strict';
 	var form = $('.contact-form'),
 		email = form.find('[type=email]');
 
-	form.submit(function () {'use strict',
-		$this = $(this);
+	form.submit(function () {'use strict';
+		var $this = $(this);
 		$.post("sendemail.php", $(".contact-form").serialize(),function(result){
 			if(result.type == 'success'){
+				ga('send', 'pageview', '/wyslanie-formularza');
 				$this.prev().text(result.message).fadeIn().delay(3000).fadeOut();
 			}
 		});
