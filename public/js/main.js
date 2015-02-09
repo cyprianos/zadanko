@@ -11,6 +11,7 @@
 	var RGBChange = function() {
 	  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
 	};
+	
 }());
 // if(('#sl2').slider) {
 //  $('#sl2').slider();
@@ -38,5 +39,25 @@ $(document).ready(function(){
 	        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
 	        zIndex: 2147483647 // Z-Index for the overlay
 		});
+	});
+
+
+// console.log($('.add-todo-cart'));
+
+	$('.add-to-cart').click(function() {
+		console.log('addtocart');
+		//get data from for example data attribute
+		//
+		// like this: var data = $('.add-to-cart').attr('data-item');
+		// var dummyData = {
+		//   'id': '1234',                     // Transaction ID. Required.
+		//   'name': 'Fluffy Pink Bunnies',    // Product name. Required.
+		//   'sku': 'DD23444',                 // SKU/code.
+		//   'category': 'Party Toys',         // Category or variation.
+		//   'price': '11.99',                 // Unit price.
+		//   'quantity': '1'
+		// };
+
+		// ga('ecommerce:addItem', dummyData);
 	});
 });
