@@ -1,6 +1,16 @@
 /*price range*/
+(function(){
+	var el =  $('#sl2'),
+		slider = el.slider;
 
+	if(slider!==undefined) {
+		console.log('slider');
+		slider.call(el);
+	}
+}());
+if(('#sl2').slider) {
  $('#sl2').slider();
+}
 
 	var RGBChange = function() {
 	  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
