@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login | E-Shopper</title>
+    <title>Order confirmation | E-Shopper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -89,9 +89,9 @@
 							<ul class="nav navbar-nav">
 								<li><a href=""><i class="fa fa-user"></i> Account</a></li>
 								<li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-								<li><a href="checkout.php"><i class="fa fa-crosshairs"></i> Checkout</a></li>
+								<li><a href="checkout.php" class="active"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.php" class="active"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="login.php"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -118,9 +118,9 @@
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.php">Products</a></li>
 										<li><a href="product-details.php">Product Details</a></li> 
-										<li><a href="checkout.php">Checkout</a></li> 
+										<li><a href="checkout.php" class="active">Checkout</a></li> 
 										<li><a href="cart.php">Cart</a></li> 
-										<li><a href="login.php" class="active">Login</a></li> 
+										<li><a href="login.php">Login</a></li> 
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
@@ -143,43 +143,30 @@
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
-	
-	<section id="form"><!--form-->
+
+	<section id="cart_items">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1">
-					<div class="login-form"><!--login form-->
-						<h2>Login to your account</h2>
-						<form action="#">
-							<input type="text" placeholder="Name" />
-							<input type="email" placeholder="Email Address" />
-							<span>
-								<input type="checkbox" class="checkbox"> 
-								Keep me signed in
-							</span>
-							<button type="submit" class="btn btn-default">Login</button>
-						</form>
-					</div><!--/login form-->
-				</div>
-				<div class="col-sm-1">
-					<h2 class="or">OR</h2>
-				</div>
-				<div class="col-sm-4">
-					<div class="signup-form"><!--sign up form-->
-						<h2>New User Signup!</h2>
-						<form action="#">
-							<input type="text" placeholder="Name"/>
-							<input type="email" placeholder="Email Address"/>
-							<input type="password" placeholder="Password"/>
-							<button type="submit" class="btn btn-default">Signup</button>
-						</form>
-					</div><!--/sign up form-->
-				</div>
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Check out</li>
+				</ol>
+			</div><!--/breadcrums-->
+
+			<div class="step-one">
+				<h2 class="heading">Order confirmation</h2>
 			</div>
+				
+
+			<div class="register-req">
+				<p>Your order has been received and will be processed shortly. If you need to contact us about your order please send us an email.</p>
+			</div><!--/register-req-->
+
 		</div>
-	</section><!--/form-->
+	</section> <!--/#cart_items-->
+
 	
-	
+
 	<footer id="footer"><!--Footer-->
 		<div class="footer-top">
 			<div class="container">
@@ -339,11 +326,10 @@
 	</footer><!--/Footer-->
 	
 
-  
+
     <script src="js/jquery.js"></script>
-	<script src="js/price-range.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
 </body>
