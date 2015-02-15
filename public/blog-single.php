@@ -622,5 +622,6 @@
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <?php include 'js/remarketing_other.php'; ?>
 </body>
 </html>

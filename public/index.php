@@ -1066,5 +1066,7 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <?php include 'js/remarketing_home.php'; ?>
+
     </body>
 </html>

@@ -490,5 +490,6 @@
 	<script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    <?php include 'js/remarketing_cart.php'; ?>
 </body>
 </html>
